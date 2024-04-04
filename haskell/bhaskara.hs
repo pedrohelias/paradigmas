@@ -2,7 +2,7 @@ delta :: Float -> Float -> Float -> Float
 delta a b c = b^2 - (4*a*c) 
 
 firstRoot :: Float -> Float -> Float -> Float 
-firstRoot delta a b = (-b + sqrt delta )/(2*a) 
+firstRoot a b c = (-b + sqrt (delta a b c) )/(2*a) 
 
 secondRoot :: Float -> Float -> Float -> Float 
-secondRoot delta a b = (-b - sqrt delta )/(2*a) 
+secondRoot a b c = (-b - sqrt (delta a b c) )/(2*a) --colocando a função sqrt dentro da função "secondRoot", ela vai ser executada quando secoonRoot rodar
