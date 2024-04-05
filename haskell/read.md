@@ -56,3 +56,15 @@ maior a b
     | a >= b = a
     | otherwise = b
 ```
+
+## Local Definitions
+
+- This definition deals with variables or functions that is not inside the main function, and, even so can be called.
+- A sample of code:
+
+```
+precoTotal :: Int -> Int -> Int 
+precoTotal a b = a * s
+    where 
+        s = (b)/2
+```
